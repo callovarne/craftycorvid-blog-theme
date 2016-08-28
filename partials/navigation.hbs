@@ -1,0 +1,28 @@
+<nav>
+  <h1 class="textmode-only">Navigation</h1>
+  {{#if @blog.logo}}
+    <a class="blog-logo" href="{{@blog.url}}">
+      <img class="ui image" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+    </a>
+  {{/if}}
+  <ul class="social-media-links ui horizontal list">
+    <li class="item">
+      <a href="https://instagram.com/craftycorvid">
+        <i class="instagram icon"></i>
+        <span class="textmode-only">Instagram</span>
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://twitter.com/craftycorvid">
+        <i class="twitter icon"></i>
+        <span class="textmode-only">Twitter</span>
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://pinterest.com/craftycorvid">
+        <i class="pinterest icon"></i>
+        <span class="textmode-only">Pinterest</span>
+      </a>
+    </li>
+  </ul>
+</nav>

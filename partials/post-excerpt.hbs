@@ -1,0 +1,14 @@
+<article class="post-excerpt ui segment">
+  <header class="ui header">
+    <h2><a href="{{url}}">{{title}}</a></h2>
+  </header>
+  <section>
+    <p>{{excerpt words="26"}} <a href="{{url}}" class="read-more">Read More</a></p>
+  </section>
+  <footer>
+    {{#if author.image}}<img class="ui avatar image" src="{{author.image}}" alt="Author image" />{{/if}}
+    {{author}}
+    {{tags prefix=" on "}}
+    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+  </footer>
+</article>
